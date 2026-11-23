@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Heladería Dulce Frío · Helados artesanales</title>
+  <meta name="description" content="Heladería Dulce Frío: helados artesanales, conos, vasos y batidos. Pide en línea y recibe tu boleta.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<header class="nav"><div class="container">
+  <a class="brand" href="#inicio"><span class="lg">🍦</span><b>Dulce Frío</b></a>
+  <nav class="nav-links"><a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#productos">Productos</a><a href="#como">Cómo comprar</a><a href="#contacto">Contacto</a></nav>
+  <div class="userbox" id="navUser"><button class="btn" id="btnLogin">👤 Iniciar sesión</button></div>
+</div></header>
+
+<section class="hero" id="inicio"><div class="container">
+  <div>
+    <h1>Helados artesanales que te <span>hacen sonreír</span> 🍨</h1>
+    <p>En <b data-emp="nombre"></b> preparamos cada helado con ingredientes naturales y mucho cariño. Pide en línea, paga fácil y recibe tu boleta al instante.</p>
+    <div class="btns"><button class="btn yellow" id="btnPedir">🛒 Pedir ahora</button><a class="btn out" href="#nosotros">Conócenos</a></div>
+  </div>
+  <div class="hero-art"><div class="big">🍦</div><i>🍓</i><i>🍫</i><i>🥤</i><i>🍨</i></div>
+</div><div class="wave"></div></section>
+
+<div class="stats"><div class="container"><div class="grid">
+  <div class="stat"><b>+10</b><span>Años endulzando vidas</span></div>
+  <div class="stat"><b>+25</b><span>Sabores artesanales</span></div>
+  <div class="stat"><b>+5 000</b><span>Clientes felices</span></div>
+  <div class="stat"><b>4.9 ★</b><span>Valoración promedio</span></div>
+</div></div></div>
+
+<section class="sec" id="nosotros"><div class="container">
+  <div class="title"><small>Nosotros</small><h2>¿Quiénes somos?</h2><p>Una heladería familiar con sabor a hogar.</p></div>
+  <div class="about">
+    <div class="about-art">🍧</div>
+    <div>
+      <p><b data-emp="razon"></b> es una empresa dedicada a la elaboración y venta de helados artesanales. Nacimos con una idea simple: que cada cono, vaso y batido te regale un momento feliz.</p>
+      <p>Trabajamos con frutas frescas, leche de calidad y recetas propias. Hoy atendemos en tienda y también por internet, con entrega a domicilio y boleta electrónica en cada compra.</p>
+      <div class="cards3" style="grid-template-columns:1fr 1fr;margin-top:18px">
+        <div class="feat" style="text-align:left"><h3>🎯 Misión</h3><p>Brindar helados deliciosos y un servicio cálido, rápido y confiable.</p></div>
+        <div class="feat" style="text-align:left"><h3>🌈 Visión</h3><p>Ser la heladería preferida de las familias, innovando en sabores y atención.</p></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec alt"><div class="container">
+  <div class="title"><small>Por qué elegirnos</small><h2>Todo lo que nos hace especiales</h2></div>
+  <div class="cards4">
+    <div class="feat"><span class="ic">🍓</span><h3>100% natural</h3><p>Frutas frescas y sin colorantes artificiales.</p></div>
+    <div class="feat"><span class="ic">🛵</span><h3>Delivery rápido</h3><p>Tu pedido llega en 25 a 35 minutos.</p></div>
+    <div class="feat"><span class="ic">🧾</span><h3>Boleta electrónica</h3><p>Recíbela al instante y envíala a tu correo.</p></div>
+    <div class="feat"><span class="ic">🎉</span><h3>Promos 2x1</h3><p>Ofertas todas las semanas para ti.</p></div>
+  </div>
+</div></section>
+
+<section class="sec" id="productos"><div class="container">
+  <div class="title"><small>Nuestro menú</small><h2>Productos destacados</h2><p>Inicia sesión para hacer tu pedido en línea.</p></div>
+  <div class="grid-p" id="grid"><p class="empty">Cargando productos…</p></div>
+  <div class="center" style="margin-top:30px"><button class="btn" id="btnPedir2">🛒 Hacer mi pedido</button></div>
+</div></section>
+
+<section class="sec alt" id="como"><div class="container">
+  <div class="title"><small>Fácil y rápido</small><h2>¿Cómo comprar?</h2></div>
+  <div class="cards3 steps3">
+    <div class="feat"><div class="num">1</div><h3>Crea tu cuenta</h3><p>Regístrate gratis o inicia sesión con tu correo.</p></div>
+    <div class="feat"><div class="num">2</div><h3>Elige y paga</h3><p>Agrega tus helados al carrito y paga en línea.</p></div>
+    <div class="feat"><div class="num">3</div><h3>Recibe tu boleta</h3><p>Descárgala o recíbela en tu correo y espera tu pedido.</p></div>
+  </div>
+</div></section>
+
+<section class="sec" id="contacto"><div class="container">
+  <div class="title"><small>Contacto</small><h2>Visítanos o escríbenos</h2></div>
+  <div class="contact">
+    <div class="feat"><span class="ic">📍</span><h3>Dirección</h3><p data-emp="direccion"></p></div>
+    <div class="feat"><span class="ic">🕒</span><h3>Horario</h3><p data-emp="horario"></p></div>
+    <div class="feat"><span class="ic">📞</span><h3>Teléfono</h3><p data-emp="telefono"></p></div>
+    <div class="feat"><span class="ic">✉️</span><h3>Correo</h3><p data-emp="correo"></p></div>
+  </div>
+</div></section>
+
+<footer class="footer"><div class="container"><b data-emp="razon"></b> · RUC <span data-emp="ruc"></span><br>© 2026 Todos los derechos reservados · Proyecto académico</div></footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>

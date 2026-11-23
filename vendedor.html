@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Empleado · Heladería Dulce Frío</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<header class="nav"><div class="container" style="max-width:none">
+  <a class="brand" href="index.html"><span class="lg">🍦</span><b>Dulce Frío</b></a><span class="tag green">Empleado</span>
+  <div class="userbox" style="margin-left:auto"><span class="who" id="who"></span><button class="btn out sm" data-logout>Salir</button></div>
+</div></header>
+<div class="layout">
+  <aside class="side"><a data-v="pedidos" class="on">📋 Pedidos</a><a data-v="venta">💰 Nueva venta</a><a data-v="ventas">🧾 Ventas del día</a></aside>
+  <main class="main" id="app"><p class="empty">Cargando…</p></main>
+</div>
+<script src="assets/js/config.js"></script><script src="assets/js/common.js"></script><script src="assets/js/vendedor.js"></script>
+</body></html>
